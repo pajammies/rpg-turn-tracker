@@ -1,0 +1,150 @@
+
+.row {
+    margin-right: 0px;
+}
+.noSelect {
+    user-select: none;
+}
+#loop {
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+#initiative-header{
+    margin-right: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+#char-name-header {
+    margin-left: 7rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+#turn-modal {
+
+}
+#lower-init-input{
+    width: 10rem;
+    border-radius: 0px;
+}
+#addCharacter {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.form-control.name {
+    width: 65%;
+}
+.form-control.initiative {
+    text-align: right;
+    width: 5rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.form-control.charName {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.btn-close.deleteItem {
+    padding: 35px 20px 0px 15px;
+    margin-right: -20px;
+    float: right;
+}
+.lowerButtons {
+    display:flex;
+    justify-content: space-around;
+}
+.allWidth {
+    max-width: 50rem;
+    padding: 2rem;
+}
+.currentTurn {
+    background-color: rgba(114, 245, 39, 0.8)
+}
+.nextTurn {
+    background-color: rgba(114, 245, 39, 0.3)
+}
+.minWidth {
+    min-width: 0;
+}
+.list-group-item {
+    padding-bottom: 8px;
+}
+.inputHeight {
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+}
+.claimButton {
+    margin-right: 30px;
+    min-width: 73px;
+}
+.modals {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    text-align: center;
+}
+.roomCodeInput {
+    padding-top: 10rem;
+    max-width: 25rem;
+    margin: 0 auto;
+    float: none;
+}
+.roomCodeAlert {
+    width: auto;
+}
+.blink_me {
+    animation: blinker 1.5s linear;
+    animation-iteration-count: 5;
+}
+.blink_me2 {
+    animation: blinker2 1.5s linear;
+    animation-iteration-count: 5;
+}
+@media (max-width: 575px) {
+    .responsive-content {
+        font-size: 100%;
+    }
+}
+@media(max-width: 575px){
+    .button-stack {
+        border-radius: 4px!important;
+        margin-bottom: .5rem;
+    }
+    .button-block {
+        display: block!important;
+    }
+    .claimButton {
+        min-width: 0px;
+    }
+    #char-name-header {
+        margin-left: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    .roomCodeAlert {
+        width: 100%;
+    }
+    .modals {
+        padding: 0;
+    }
+}
+.full-width {
+    width: 100%;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+@keyframes blinker2 {
+    50% {
+        opacity: 0;
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
