@@ -3,6 +3,9 @@ FROM node:16
 ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 
+# test
+RUN echo ${NODE_ENV}
+
 # Create app directory
 WORKDIR /usr/src/app
 
