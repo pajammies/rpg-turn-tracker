@@ -10,5 +10,8 @@
     "express": "^4.17.1",
     "socket.io": "latest",
     "vue": "^2.6.14"
+  },
+  "devDependencies": {
+	"nodemon": "^2.0.15"
   }
 }
